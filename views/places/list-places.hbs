@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 class="mb-4">Estudiantes</h2>
+    {{#each places}}
+    <div class="p-3 d-flex align-items-center">
+        <div class="p-3">
+            <h3 class="h4 text-muted">{{name}}</h3>
+        </div>
+        <div class="p-3">
+            <a class="btn btn-outline-secondary" href="/places/{{id}}/update">Edit</a>
+        </div>
+        <div class="p-3">
+            <a class="btn btn-outline-danger" href="/places/{{id}}/delete">Delete</a>
+        </div>
+    </div>
+    {{/each}}
+    <div class="p-3">
+        <a class="btn btn-outline-success" href="/places/create">Create</a>
+    </div>
+</div>
